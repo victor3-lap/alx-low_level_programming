@@ -4,11 +4,14 @@
  *@h: pointer to be used
  *Return: The number of nodes.
  */
+
 size_t print_list(const list_t *h)
 {
+
 	size_t nodes;
 
 	nodes = 0;
+
 	while (h != NULL)
 	{
 		if (h->str == NULL)
@@ -18,5 +21,7 @@ size_t print_list(const list_t *h)
 		h = h->next;
 		nodes++;
 	}
+
 	return (nodes);
+
 }
